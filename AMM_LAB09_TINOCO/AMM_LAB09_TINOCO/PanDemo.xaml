@@ -5,12 +5,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:AMM_LAB09_TINOCO"
              mc:Ignorable="d"
-             x:Class="AMM_LAB09_TINOCO.PinchDemo">
+             x:Class="AMM_LAB09_TINOCO.PanDemo">
     <ContentPage.Content>
-        <Grid Padding="20">
-            <local:PinchToZoomContainer>
-                <Image Source="tapped.jpg"/>
-            </local:PinchToZoomContainer>
-        </Grid>
+        <AbsoluteLayout>
+            <local:PanContainer>
+                <Image Source="MonoMonkey.jpg" WidthRequest="1024" HeightRequest="758"/>
+            </local:PanContainer>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
